@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { TypeAnimation } from "react-type-animation";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -60,8 +61,20 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 font-space">
               <span className="gradient-text">Creative Developer</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light">
-              Building Digital Experiences
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light min-h-[3rem]">
+              <TypeAnimation
+                sequence={[
+                  'Software Developer',
+                  2000,
+                  'AI/ML Enthusiast',
+                  2000,
+                  'Aspiring Full Stack Developer & Data Analyst',
+                  2000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
             </h2>
           </motion.div>
 
