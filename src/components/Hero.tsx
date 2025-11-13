@@ -109,6 +109,14 @@ const Hero = () => {
             >
               Get In Touch
             </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 py-6 border-secondary/50 hover:bg-secondary/10"
+              onClick={() => window.open('#', '_blank')}
+            >
+              Resume
+            </Button>
           </motion.div>
 
           <motion.div
