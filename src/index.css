@@ -86,6 +86,21 @@ All colors MUST be HSL.
   .glow-effect {
     box-shadow: var(--shadow-glow);
   }
+  
+  .pulse-dot {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(142 76% 36% / 0.7);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 0 10px hsl(142 76% 36% / 0);
+      transform: scale(1.1);
+    }
+  }
 }
 
 @layer base {
