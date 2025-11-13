@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { ArrowDown } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
 const About = () => {
@@ -39,6 +40,19 @@ const About = () => {
                 alt="Profile"
                 className="relative rounded-2xl shadow-2xl w-full gradient-border"
               />
+              
+              {/* Arrow with "That's me" */}
+              <motion.div
+                initial={{ opacity: 0, x: -30, y: -30 }}
+                animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="absolute -top-12 -left-8 flex items-center gap-2"
+              >
+                <ArrowDown className="w-6 h-6 text-primary rotate-[135deg]" />
+                <span className="text-lg font-medium text-foreground bg-card/80 backdrop-blur-sm px-3 py-1 rounded-lg border border-primary/20 shadow-lg">
+                  That's me
+                </span>
+              </motion.div>
             </div>
           </motion.div>
 
