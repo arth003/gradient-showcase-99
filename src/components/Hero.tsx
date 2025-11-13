@@ -58,7 +58,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 font-space">
+            <h1 className="mt-8 text-5xl md:text-7xl lg:text-8xl font-bold mb-2 font-space">
               <span className="gradient-text">Creative Developer</span>
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light min-h-[3rem]">

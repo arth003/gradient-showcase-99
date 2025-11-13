@@ -10,10 +10,10 @@ const Contact = () => {
   });
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#", color: "hover:text-primary" },
-    { icon: Linkedin, label: "LinkedIn", href: "#", color: "hover:text-secondary" },
-    { icon: Twitter, label: "Twitter", href: "#", color: "hover:text-accent" },
-    { icon: Mail, label: "Email", href: "mailto:contact@example.com", color: "hover:text-primary-glow" },
+    { icon: Github, label: "GitHub", href: "https://github.com/ArthNangar", color: "hover:text-primary" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/arth-nangar-574589241/", color: "hover:text-secondary" },
+    // { icon: Twitter, label: "Twitter", href: "#", color: "hover:text-accent" },
+    { icon: Mail, label: "Email", href: "mailto:arthnangar3@gmail.com", color: "hover:text-primary-glow" },
   ];
 
   return (
@@ -60,7 +60,7 @@ const Contact = () => {
                   Get In Touch
                 </h3>
                 <p className="text-xl text-muted-foreground">
-                  contact@example.com
+                  arthnangar3@gmail.com
                 </p>
               </div>
 
