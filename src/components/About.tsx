@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ArrowDown } from "lucide-react";
+import { CornerLeftUp } from "lucide-react";
 import profileImg from "@/assets/profile1.jpg";
 
 const About = () => {
@@ -33,12 +34,13 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-full max-w-xs mx-auto">
               <div className="absolute inset-0 gradient-bg opacity-20 blur-3xl rounded-full" />
               <img
                 src={profileImg}
                 alt="Profile"
                 className="relative rounded-2xl shadow-2xl w-full gradient-border"
+                // className="relative rounded-full shadow-2xl w-full gradient-border"
               />
               
               {/* Arrow with "That's me" */}
@@ -46,9 +48,10 @@ const About = () => {
                 initial={{ opacity: 0, x: -30, y: -30 }}
                 animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -top-12 -left-8 flex items-center gap-2"
+                className="absolute -bottom-12 -right-1 flex items-center gap-2"
               >
-                <ArrowDown className="w-6 h-6 text-primary rotate-[135deg]" />
+                {/* <ArrowDown className="w-6 h-6 text-primary rotate-[135deg]" /> */}
+                <CornerLeftUp className="w-6 h-6 text-primary" />
                 <span className="text-lg font-medium text-foreground bg-card/80 backdrop-blur-sm px-3 py-1 rounded-lg border border-primary/20 shadow-lg">
                   That's me
                 </span>
@@ -63,17 +66,16 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold text-foreground font-space">
-              Hello! I'm a passionate <span className="gradient-text">Full Stack Developer</span>
+              Hello! I'm a passionate <span className="gradient-text">Software Developer and a Graduate student in Computer Science.</span>
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With expertise in modern web technologies, I specialize in creating seamless digital
-              experiences that combine beautiful design with powerful functionality.
+             My passion lies in building functional and scalable applications. Leveraging a solid foundation in languages like Python, SQL, MERN stack, I specialize in creating seamless digital experiences - from database design to robust user interface implementation.
+
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My journey in web development started with a curiosity for how things work and
-              evolved into a passion for crafting innovative solutions that make a difference.
+             I thrive on complexity and focus on problem-solving—a skill honed through academic projects and competitive hackathons. I am highly adaptable, quick to integrate new tools, and eager to contribute effectively to high-impact challenges in the tech industry.
             </p>
-            <div className="space-y-4 pt-4">
+            {/* <div className="space-y-4 pt-4">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center text-xl font-bold">
                   5+
@@ -92,7 +94,7 @@ const About = () => {
                   <p className="text-sm text-muted-foreground">With Happy Clients</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
