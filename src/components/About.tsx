@@ -46,10 +46,10 @@ const About = () => {
                 initial={{ opacity: 0, x: -30, y: -30 }}
                 animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="absolute -top-12 -left-8 flex items-center gap-2"
+                className="absolute -top-8 left-4 md:-top-12 md:-left-8 flex items-center gap-2"
               >
-                <ArrowDown className="w-6 h-6 text-primary rotate-[135deg]" />
-                <span className="text-lg font-medium text-foreground bg-card/80 backdrop-blur-sm px-3 py-1 rounded-lg border border-primary/20 shadow-lg">
+                <ArrowDown className="w-5 h-5 md:w-6 md:h-6 text-primary rotate-[135deg]" />
+                <span className="text-sm md:text-lg font-medium text-foreground bg-card/80 backdrop-blur-sm px-2 py-1 md:px-3 rounded-lg border border-primary/20 shadow-lg">
                   That's me
                 </span>
               </motion.div>
@@ -74,22 +74,22 @@ const About = () => {
               evolved into a passion for crafting innovative solutions that make a difference.
             </p>
             <div className="space-y-4 pt-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center text-xl font-bold">
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg gradient-bg flex items-center justify-center text-lg md:text-xl font-bold shrink-0">
                   5+
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Years Experience</p>
-                  <p className="text-sm text-muted-foreground">In Web Development</p>
+                  <p className="font-semibold text-foreground text-sm md:text-base">Years Experience</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">In Web Development</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center text-xl font-bold">
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg gradient-bg flex items-center justify-center text-lg md:text-xl font-bold shrink-0">
                   50+
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Projects Completed</p>
-                  <p className="text-sm text-muted-foreground">With Happy Clients</p>
+                  <p className="font-semibold text-foreground text-sm md:text-base">Projects Completed</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">With Happy Clients</p>
                 </div>
               </div>
             </div>
