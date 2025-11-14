@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,18 +19,17 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Skills", path: "/skills" },
+    { name: "Experience", path: "/experience" },
+    { name: "Certifications", path: "/certifications" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: "smooth" });
+  const handleNavigation = (path: string) => {
+    navigate(path);
     setIsOpen(false);
   };
 
@@ -57,8 +59,10 @@ const Navigation = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                onClick={() => handleNavigation(item.path)}
+                className={`text-foreground hover:text-primary transition-colors duration-300 font-medium ${
+                  location.pathname === item.path ? "text-primary" : ""
+                }`}
               >
                 {item.name}
               </motion.button>
@@ -66,7 +70,7 @@ const Navigation = () => {
             <Button
               variant="default"
               className="gradient-bg hover:opacity-90 transition-opacity"
-              onClick={() => scrollToSection("#contact")}
+              onClick={() => handleNavigation("/contact")}
             >
               Let's Talk
             </Button>
@@ -92,8 +96,10 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-3 text-foreground hover:text-primary transition-colors"
+                onClick={() => handleNavigation(item.path)}
+                className={`block w-full text-left py-3 text-foreground hover:text-primary transition-colors ${
+                  location.pathname === item.path ? "text-primary" : ""
+                }`}
               >
                 {item.name}
               </button>
@@ -101,7 +107,7 @@ const Navigation = () => {
             <Button
               variant="default"
               className="w-full mt-4 gradient-bg"
-              onClick={() => scrollToSection("#contact")}
+              onClick={() => handleNavigation("/contact")}
             >
               Let's Talk
             </Button>
