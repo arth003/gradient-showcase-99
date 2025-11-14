@@ -67,13 +67,13 @@ const Navigation = () => {
                 {item.name}
               </motion.button>
             ))}
-            <Button
+            {/* <Button
               variant="default"
               className="gradient-bg hover:opacity-90 transition-opacity"
               onClick={() => handleNavigation("/contact")}
             >
               Let's Talk
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,13 +104,13 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button
+            {/* <Button
               variant="default"
               className="w-full mt-4 gradient-bg"
               onClick={() => handleNavigation("/contact")}
             >
               Let's Talk
-            </Button>
+            </Button> */}
           </motion.div>
         )}
       </div>

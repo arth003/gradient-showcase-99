@@ -9,32 +9,39 @@ const Experience = () => {
   });
 
   const experiences = [
-    {
+     {
       year: "2025",
       title: "Graduation",
-      company: "Dharmasth Desai University, Nadiad",
-      description: "Major in Information Technology with a CGPA of 8.98. Nobody asks this but it's okay.",
+      company: "New Jersey Insitute of Technology, New Jersey, USA",
+      description: "Major in Computer Science. Expected to Graduate in May,2027.",
       type: "education" as const,
     },
     {
-      year: "2022",
+      year: "2025",
+      title: "Under-Grade",
+      company: "Dharmasth Desai University, Nadiad, India",
+      description: "Major in Information Technology with a CGPA of 7.5/10.",
+      type: "education" as const,
+    },
+    {
+      year: "2024",
       title: "Internship",
-      company: "TechCorp",
-      description: "Developed a Full-stack application with MERN stack",
+      company: "GUJ INFO PETRO LIMITED",
+      description: "Working as a Software Developer Intern.",
       type: "work" as const,
     },
     {
       year: "2021",
       title: "Higher Secondary School",
-      company: "Modi School, Rajkot",
-      description: "Subjects being PCM - I barely survived with 94.0% marks aggregate. Flex fridays, fellas.",
+      company: "Gyanmanjari High School",
+      description: "Subjects being Physics, Chemistry, Mathematics - I barely survived with 85.07% marks.",
       type: "education" as const,
     },
     {
       year: "2019",
       title: "Secondary School",
-      company: "Genius International school, Keshod",
-      description: "I barely survived with 90.0% marks aggregate. Flex fridays, fellas.",
+      company: "Ultra Vision High School",
+      description: "Percentage 78.33%.",
       type: "education" as const,
     },
   ];
@@ -72,7 +79,7 @@ const Experience = () => {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-space">
-            <span className="gradient-text">Experience</span>
+            <span className="gradient-text">Education & Experience</span>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg">
             My journey through education and professional growth

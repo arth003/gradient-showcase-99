@@ -81,17 +81,17 @@ const About = () => {
                   5+
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm md:text-base">Years Experience</p>
-                  <p className="text-xs md:text-sm text-muted-foreground">In Web Development</p>
+                  <p className="font-semibold text-foreground">Years Experience</p>
+                  <p className="text-sm text-muted-foreground">In Web Development</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg gradient-bg flex items-center justify-center text-lg md:text-xl font-bold shrink-0">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center text-xl font-bold">
                   50+
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm md:text-base">Projects Completed</p>
-                  <p className="text-xs md:text-sm text-muted-foreground">With Happy Clients</p>
+                  <p className="font-semibold text-foreground">Projects Completed</p>
+                  <p className="text-sm text-muted-foreground">With Happy Clients</p>
                 </div>
               </div>
             </div> */}

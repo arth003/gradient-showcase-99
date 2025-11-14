@@ -14,7 +14,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `url(${heroBg})`,
@@ -58,22 +58,37 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="mt-8 text-5xl md:text-7xl lg:text-8xl font-bold mb-2 font-space">
-              <span className="gradient-text">Creative Developer</span>
-            </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light min-h-[3rem]">
+            {/* 1. GREETING (Smallest Text) */}
+            <h4 className="text-3xl font-semibold text-white mb-2">
+              Hello, It's Me
+            </h4>
+
+            {/* 2. NAME (Largest, Primary Text) */}
+            <h3 className="text-4xl md:text-6xl font-bold mb-6 font-space text-primary leading-none">
+              Arth Nangar.
+            </h3>
+
+            {/* 3. TRANSITIONING ROLE (Medium Text with Accent) */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-muted-foreground font-light min-h-[4rem]">
+              <span className="text-white font-medium mr-2">I'm a</span>
               <TypeAnimation
                 sequence={[
                   'Software Developer',
                   2000,
                   'AI/ML Enthusiast',
                   2000,
-                  'Aspiring Full Stack Developer & Data Analyst',
+                  'Full Stack Developer', 
                   2000,
+                  'Data Analyst', 
+                  2000,
+                  'Creative Developer',
+                  2000,
+                  
                 ]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
+                className="gradient-text font-bold" // Apply gradient and bold to the animated part
               />
             </h2>
           </motion.div>
@@ -113,7 +128,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="text-lg px-8 py-6 border-secondary/50 hover:bg-secondary/10"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1LxcKyOq2p0EW7cSMqNs4LfTQvS4yUOwL/view?usp=sharing', '_blank')}
             >
               Resume
             </Button>
