@@ -12,53 +12,45 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      description: "Professional level certification for designing distributed systems on AWS",
+      title: "Tata GenAI Powered Data Analytics Job Simulation",
+      issuer: "Forage",
+      date: "November, 2025",
+      description: "Conducted exploratory data analysis (EDA) and proposed a no-code predictive modeling framework to assess customer delinquency risk, leveraging GenAI tools for data insights.",
       color: "from-orange-500 to-yellow-500",
       link: "#"
     },
     {
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2023",
-      description: "Expertise in developing scalable applications on Google Cloud Platform",
-      color: "from-blue-500 to-cyan-500",
-      link: "#"
-    },
-    {
-      title: "Machine Learning Specialization",
-      issuer: "Stanford University",
-      date: "2023",
-      description: "Comprehensive ML course covering algorithms and neural networks",
-      color: "from-purple-500 to-pink-500",
-      link: "#"
-    },
-    {
-      title: "Full Stack Web Development",
-      issuer: "Meta",
-      date: "2022",
-      description: "Professional certification in modern web development technologies",
-      color: "from-green-500 to-emerald-500",
-      link: "#"
-    },
-    {
-      title: "Data Science Professional Certificate",
-      issuer: "IBM",
-      date: "2022",
-      description: "Complete data science program including Python, SQL, and data visualization",
-      color: "from-indigo-500 to-blue-500",
-      link: "#"
-    },
-    {
-      title: "React Advanced Patterns",
+      title: "Complete Python Pro Bootcamp: By Dr.Angela Yu",
       issuer: "Udemy",
-      date: "2023",
-      description: "Advanced React patterns, hooks, and performance optimization",
-      color: "from-cyan-500 to-teal-500",
-      link: "#"
-    }
+      date: "August, 2025",
+      description: "This is an intensive, project-based bootcamp covering a wide range of Python topics, from fundamental programming to advanced web scraping, game development, and professional automation projects.",
+      color: "from-blue-500 to-cyan-500",
+      link: "https://www.udemy.com/certificate/UC-c3f02cdd-a2be-4ca4-b038-7c91786f4ceb/"
+    },
+    {
+      title: "AWS Academy Machine Learning Foundations",
+      issuer: "Amazon Web Service",
+      date: "July, 2024",
+      description: "Completed the foundational AWS Machine Learning course, gaining hands-on experience with core ML concepts, data preparation, model training, and deployment using Amazon SageMaker and other specialized AWS services.Comprehensive ML course covering algorithms and neural networks",
+      color: "from-purple-500 to-pink-500",
+      link: "https://www.credly.com/go/854y6t3M"
+    },
+    {
+      title: "Machine Learning Course",
+      issuer: "Udemy",
+      date: "September, 2024",
+      description: "Certification in Machine Learning.",
+      color: "from-green-500 to-emerald-500",
+      link: "https://www.udemy.com/certificate/UC-37024cd8-3ac0-4e35-b787-7331cf716ffd/"
+    },
+    {
+      title: " AWS Academy Cloud Foundations",
+      issuer: "Amazon Web Service",
+      date: "November, 2023",
+      description: "Completed the AWS Cloud Foundations course, establishing a strong understanding of core AWS services (Compute, Storage, Databases), cloud security principles, networking, and the best practices for designing scalable cloud architecture.",
+      color: "from-indigo-500 to-blue-500",
+      link: "https://www.credly.com/go/QdX9wqiG"
+    },
   ];
 
   const containerVariants = {
