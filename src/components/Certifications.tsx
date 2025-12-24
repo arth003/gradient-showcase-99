@@ -49,8 +49,7 @@ const Certifications = () => {
       date: "November, 2023",
       description: "Completed the AWS Cloud Foundations course, establishing a strong understanding of core AWS services (Compute, Storage, Databases), cloud security principles, networking, and the best practices for designing scalable cloud architecture.",
       color: "from-indigo-500 to-blue-500",
-      // link: "https://www.credly.com/go/QdX9wqiG"
-      link : "https://drive.google.com/file/d/1AEdZR59CQgLK1lN9yh3ld5bkoQgFN05g/view?usp=drive_link"
+      link: "https://www.credly.com/go/QdX9wqiG"
     },
   ];
 
@@ -101,19 +100,17 @@ const Certifications = () => {
         >
           {certifications.map((cert, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="group relative overflow-hidden h-full hover:shadow-2xl transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm hover:-translate-y-2">
-                <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
-                
+              <Card className="h-full border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${cert.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${cert.color} flex items-center justify-center flex-shrink-0`}>
                       <Award className="w-6 h-6 text-white" />
                     </div>
                     <span className="text-xs text-muted-foreground font-medium px-3 py-1 rounded-full bg-primary/10">
                       {cert.date}
                     </span>
                   </div>
-                  <CardTitle className="text-xl font-bold mt-4 group-hover:text-primary transition-colors">
+                  <CardTitle className="text-xl font-bold mt-4">
                     {cert.title}
                   </CardTitle>
                   <CardDescription className="text-sm font-medium text-primary/70">
@@ -126,21 +123,22 @@ const Certifications = () => {
                     {cert.description}
                   </p>
                   <Button
-                    variant="ghost"
                     size="sm"
-                    className="w-full group-hover:bg-primary/10 transition-colors"
-                    asChild
+                    className="w-full gap-2 gradient-bg hover:opacity-90"
                     disabled={cert.link === "#"}
+                    asChild={cert.link !== "#"}
                   >
-                    <a 
-                      href={cert.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      onClick={(e) => cert.link === "#" && e.preventDefault()}
-                    >
-                      View Certificate
-                      <ExternalLink className="w-4 h-4 ml-2" />
-                    </a>
+                    {cert.link !== "#" ? (
+                      <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4" />
+                        View Certificate
+                      </a>
+                    ) : (
+                      <span>
+                        <ExternalLink className="w-4 h-4" />
+                        View Certificate
+                      </span>
+                    )}
                   </Button>
                 </CardContent>
               </Card>
