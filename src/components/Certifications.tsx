@@ -101,7 +101,7 @@ const Certifications = () => {
           {certifications.map((cert, index) => (
             <motion.div key={index} variants={itemVariants}>
               <Card className="group relative overflow-hidden h-full hover:shadow-2xl transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm hover:-translate-y-2">
-                <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+                <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
                 
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
@@ -124,23 +124,33 @@ const Certifications = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {cert.description}
                   </p>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="w-full group-hover:bg-primary/10 transition-colors"
-                    asChild
-                    disabled={cert.link === "#"}
-                  >
-                    <a 
-                      href={cert.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      onClick={(e) => cert.link === "#" && e.preventDefault()}
+                  {cert.link === "#" ? (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="w-full group-hover:bg-primary/10 transition-colors"
+                      disabled
                     >
                       View Certificate
                       <ExternalLink className="w-4 h-4 ml-2" />
+                    </Button>
+                  ) : (
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="w-full group-hover:bg-primary/10 transition-colors"
+                      >
+                        View Certificate
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
                     </a>
-                  </Button>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
