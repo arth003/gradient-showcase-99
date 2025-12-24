@@ -105,7 +105,7 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="text-center mt-16 text-muted-foreground"
         >
-          <p>© 2024 Portfolio. Built with React & Tailwind CSS</p>
+          <p>© 2025 Arth Nangar. All Rights Reserved </p>
         </motion.div>
       </div>
     </section>

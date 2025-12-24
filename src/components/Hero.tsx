@@ -109,13 +109,13 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button
+            {/* <Button
               size="lg"
               className="gradient-bg text-lg px-8 py-6 glow-effect hover:opacity-90 transition-opacity"
               onClick={() => scrollToSection("#projects")}
             >
               View My Work
-            </Button>
+            </Button> */}
             <Button
               size="lg"
               variant="outline"

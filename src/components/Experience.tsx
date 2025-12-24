@@ -10,15 +10,15 @@ const Experience = () => {
 
   const experiences = [
      {
-      year: "2025",
-      title: "Graduation",
+      year: "2025 - 2027",
+      title: "Graduate Studies",
       company: "New Jersey Insitute of Technology, New Jersey, USA",
       description: "Major in Computer Science. Expected to Graduate in May,2027.",
       type: "education" as const,
     },
     {
-      year: "2025",
-      title: "Under-Grade",
+      year: "2021 - 2025",
+      title: "UnderGraduate Studies",
       company: "Dharmasth Desai University, Nadiad, India",
       description: "Major in Information Technology with a CGPA of 7.5/10.",
       type: "education" as const,
