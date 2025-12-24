@@ -17,7 +17,7 @@ const Certifications = () => {
       date: "November, 2025",
       description: "Conducted exploratory data analysis (EDA) and proposed a no-code predictive modeling framework to assess customer delinquency risk, leveraging GenAI tools for data insights.",
       color: "from-orange-500 to-yellow-500",
-      link: "#"
+      link: "https://drive.google.com/file/d/108cfEHJfL8FApPxIYq51FNKXJK6ftg_v/view?usp=sharing"
     },
     {
       title: "Complete Python Pro Bootcamp: By Dr.Angela Yu",
