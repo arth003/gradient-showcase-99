@@ -88,7 +88,7 @@ const Hero = () => {
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-                className="gradient-text font-bold" // Apply gradient and bold to the animated part
+                className="gradient-text font-bold" 
               />
             </h2>
           </motion.div>

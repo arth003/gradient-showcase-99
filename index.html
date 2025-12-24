@@ -23,5 +23,29 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const originalTitle = document.title;
+            const attentionMessage = "Come Back to Portfolio!"; 
+
+            const handleVisibilityChange = () => {
+                if (document.hidden) {
+                    // Tab is inactive: Change title only
+                    document.title = attentionMessage;
+                } else {
+                    // Tab is active: Restore original title
+                    document.title = originalTitle;
+                }
+            };
+
+            // Attach the event listener to handle tab switching
+            document.addEventListener('visibilitychange', handleVisibilityChange);
+
+            // Set the correct title initially
+            document.title = originalTitle;
+        });
+    </script>
+
   </body>
 </html>
