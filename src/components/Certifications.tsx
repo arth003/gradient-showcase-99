@@ -128,10 +128,18 @@ const Certifications = () => {
                     variant="ghost"
                     size="sm"
                     className="w-full group-hover:bg-primary/10 transition-colors"
-                    onClick={() => window.open(cert.link, '_blank')}
+                    asChild
+                    disabled={cert.link === "#"}
                   >
-                    View Certificate
-                    <ExternalLink className="w-4 h-4 ml-2" />
+                    <a 
+                      href={cert.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={(e) => cert.link === "#" && e.preventDefault()}
+                    >
+                      View Certificate
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
