@@ -3,6 +3,12 @@ import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Import your project images here - add images to src/assets folder first
+// Example: import projectImage1 from "@/assets/project1.png";
+// import eventAquariumImg from "@/assets/event-aquarium.png";
+// import calculatorImg from "@/assets/calculator.png";
+// import motionCanvasImg from "@/assets/motion-canvas.png";
+
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -17,7 +23,7 @@ const Projects = () => {
       gradient: "from-primary to-secondary",
       sourceCode: "https://github.com/yourusername/ecommerce-platform",
       liveDemo: "https://ecommerce-demo.example.com",
-      image: "", // Add your project screenshot URL here
+      image: null as string | null, // Replace with: projectImage1
     },
     {
       title: "Social Media Dashboard",
@@ -26,7 +32,7 @@ const Projects = () => {
       gradient: "from-secondary to-accent",
       sourceCode: "https://github.com/yourusername/social-dashboard",
       liveDemo: "https://social-dashboard-demo.example.com",
-      image: "", // Add your project screenshot URL here
+      image: null as string | null,
     },
     {
       title: "Event Aquarium",
@@ -36,7 +42,7 @@ const Projects = () => {
       gradient: "from-purple-600 to-indigo-600",
       sourceCode: "https://github.com/ArthNangar/event_aquarium",
       liveDemo: "https://event-aquarium-nine.vercel.app/",
-      image: "", // Add your project screenshot URL here
+      image: null as string | null, // Replace with: eventAquariumImg
     },
     {
       title: "Advanced Full Stack Calculator",
@@ -46,7 +52,7 @@ const Projects = () => {
       gradient: "from-emerald-500 to-teal-600",
       sourceCode: "https://github.com/ArthNangar/finalproject",
       liveDemo: "https://drive.google.com/file/d/1PJ1DEGjY1_i-B_1rMu9V_8Hm_XkRxi8G/view?usp=drive_link",
-      image: "", // Add your project screenshot URL here
+      image: null as string | null, // Replace with: calculatorImg
     },
     {
       title: "Portfolio CMS",
@@ -55,7 +61,7 @@ const Projects = () => {
       gradient: "from-secondary to-primary",
       sourceCode: "https://github.com/yourusername/portfolio-cms",
       liveDemo: "https://portfolio-cms-demo.example.com",
-      image: "", // Add your project screenshot URL here
+      image: null as string | null,
     },
     {
       title: "Motion Canvas",
@@ -65,7 +71,7 @@ const Projects = () => {
       gradient: "from-cyan-500 to-blue-600",
       sourceCode: "https://github.com/ArthNangar/motion_canvas",
       liveDemo: "Local Application",
-      image: "", // Add your project screenshot URL here
+      image: null as string | null, // Replace with: motionCanvasImg
     },
   ];
 
