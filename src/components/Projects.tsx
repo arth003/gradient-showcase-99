@@ -27,20 +27,22 @@ const Projects = () => {
       liveDemo: "https://social-dashboard-demo.example.com",
     },
     {
-      title: "AI Content Generator",
-      description: "AI-powered content creation tool leveraging machine learning for automated text generation.",
-      tech: ["React", "Python", "OpenAI", "FastAPI"],
-      gradient: "from-accent to-primary",
-      sourceCode: "https://github.com/yourusername/ai-content-generator",
-      liveDemo: "https://ai-content-demo.example.com",
+      title: "Event Aquarium",
+      description:
+        "Event Aquarium is an all-in-one event management platform built for colleges and small-scale organizers. It allows hosts to create, and manage events with ease. Users can explore events, enroll seamlessly, and purchase tickets within a single, streamlined system.",
+      tech: [ "Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Stripe" ],
+      gradient: "from-purple-600 to-indigo-600",
+      sourceCode: "https://github.com/ArthNangar/event_aquarium",
+      liveDemo: "https://event-aquarium-nine.vercel.app/"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task manager with real-time updates, team features, and productivity analytics.",
-      tech: ["Vue.js", "Firebase", "Tailwind CSS", "PWA"],
-      gradient: "from-primary-glow to-secondary",
-      sourceCode: "https://github.com/yourusername/task-manager",
-      liveDemo: "https://task-manager-demo.example.com",
+      title: "Advanced Full Stack Calculator",
+      description:
+        "An advanced, full-stack calculator application implementing complete BREAD functionality for user calculations. It supports multi-level expression evaluation along with multiple arithmetic operations.",
+      tech: [  "Python", "FastAPI","PostgreSQL", "SQLAlchemy", "Docker","GitHub Actions"],
+      gradient: "from-emerald-500 to-teal-600",
+      sourceCode: "https://github.com/ArthNangar/finalproject",
+      liveDemo: "https://drive.google.com/file/d/1PJ1DEGjY1_i-B_1rMu9V_8Hm_XkRxi8G/view?usp=drive_link"
     },
     {
       title: "Portfolio CMS",
@@ -51,12 +53,13 @@ const Projects = () => {
       liveDemo: "https://portfolio-cms-demo.example.com",
     },
     {
-      title: "Fitness Tracker",
-      description: "Mobile-first fitness tracking application with workout plans, progress monitoring, and social features.",
-      tech: ["React Native", "MongoDB", "Express", "WebSocket"],
-      gradient: "from-accent to-secondary",
-      sourceCode: "https://github.com/yourusername/fitness-tracker",
-      liveDemo: "https://fitness-tracker-demo.example.com",
+      title: "Motion Canvas",
+      description:
+        "Motion Canvas is a real-time computer vision application that lets users draw in the air using hand gestures captured through a webcam. Built with OpenCV and MediaPipe, it supports, gesture-based color selection, erasing, and multiple background modes.",
+      tech: [ "Python", "OpenCV", "MediaPipe", "NumPy" ],
+      gradient: "from-cyan-500 to-blue-600",
+      sourceCode: "https://github.com/ArthNangar/motion_canvas",
+      liveDemo: "Local Application"
     },
   ];
 
