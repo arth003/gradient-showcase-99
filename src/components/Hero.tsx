@@ -99,8 +99,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            I craft beautiful, functional websites and applications with modern technologies
-            and stunning animations
+            I craft beautiful, functional websites and applications with modern technologies.
           </motion.p>
 
           <motion.div

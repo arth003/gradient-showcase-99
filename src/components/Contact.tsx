@@ -90,7 +90,7 @@ const Contact = () => {
                 <Button
                   size="lg"
                   className="gradient-bg text-lg px-12 py-6 glow-effect hover:opacity-90 transition-opacity"
-                  onClick={() => window.location.href = 'mailto:contact@example.com'}
+                  onClick={() => window.location.href = 'mailto:arthnangar3@gmail.com'}
                 >
                   Send Me an Email
                 </Button>

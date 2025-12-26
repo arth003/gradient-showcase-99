@@ -23,7 +23,7 @@ const Certifications = () => {
       title: "Complete Python Pro Bootcamp: By Dr.Angela Yu",
       issuer: "Udemy",
       date: "August, 2025",
-      description: "This is an intensive, project-based bootcamp covering a wide range of Python topics, from fundamental programming to advanced web scraping, game development, and professional automation projects.",
+      description: "This is an intensive, project-based bootcamp covering a wide range of Python topics, from fundamental programming to advanced web scraping, and professional automation projects. ",
       color: "from-blue-500 to-cyan-500",
       link: "https://www.udemy.com/certificate/UC-c3f02cdd-a2be-4ca4-b038-7c91786f4ceb/"
     },
@@ -31,15 +31,15 @@ const Certifications = () => {
       title: "AWS Academy Machine Learning Foundations",
       issuer: "Amazon Web Service",
       date: "July, 2024",
-      description: "Completed the foundational AWS Machine Learning course, gaining hands-on experience with core ML concepts, data preparation, model training, and deployment using Amazon SageMaker and other specialized AWS services.Comprehensive ML course covering algorithms and neural networks",
+      description: "Foundational AWS Machine Learning course, gaining hands-on experience with core ML concepts, data preparation, model training, and deployment using Amazon SageMaker and other specialized AWS services.",
       color: "from-purple-500 to-pink-500",
       link: "https://www.credly.com/go/854y6t3M"
     },
     {
-      title: "Machine Learning Course",
+      title: "Machine Learning Course Udemy",
       issuer: "Udemy",
       date: "September, 2024",
-      description: "Certification in Machine Learning.",
+      description: "Completed a hands-on Machine Learning course focused on core algorithms, data preprocessing, and model evaluation. Built and trained models using Python and applied techniques to real-world datasets.",
       color: "from-green-500 to-emerald-500",
       link: "https://www.udemy.com/certificate/UC-37024cd8-3ac0-4e35-b787-7331cf716ffd/"
     },
@@ -47,7 +47,7 @@ const Certifications = () => {
       title: " AWS Academy Cloud Foundations",
       issuer: "Amazon Web Service",
       date: "November, 2023",
-      description: "Completed the AWS Cloud Foundations course, establishing a strong understanding of core AWS services (Compute, Storage, Databases), cloud security principles, networking, and the best practices for designing scalable cloud architecture.",
+      description: "Completed the AWS Cloud Foundations course, establishing a strong understanding of core AWS services, cloud security principles, networking, and the best practices for designing scalable cloud architecture.",
       color: "from-indigo-500 to-blue-500",
       link: "https://www.credly.com/go/QdX9wqiG"
     },
