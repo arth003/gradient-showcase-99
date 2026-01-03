@@ -13,22 +13,22 @@ const Experience = () => {
       year: "2025 - 2027",
       title: "Graduate Studies",
       company: "New Jersey Insitute of Technology, New Jersey, USA",
-      description: "Major in Computer Science. Expected to Graduate in May,2027.",
-      type: "education" as const,
-    },
-    {
-      year: "2021 - 2025",
-      title: "UnderGraduate Studies",
-      company: "Dharmasth Desai University, Nadiad, India",
-      description: "Major in Information Technology with a CGPA of 7.5/10.",
+      description: "Major in Computer Science. Semester-1 Coursework: Database Mgt Systems Design, Operating Systems,  Python for Web API . Current GPA: 3.67",
       type: "education" as const,
     },
     {
       year: "2024",
       title: "Internship",
       company: "GUJ INFO PETRO LIMITED",
-      description: "Working as a Software Developer Intern.",
+      description: "Contributed to multiple live projects as a Software Developer Intern. Developed and enhanced frontend components for GIPL’s website redesign, improved CMS admin modules actively used by 40+ schools. Built Power BI dashboards for KPI analysis, optimized SQL Server queries, and worked with C# and ASP.NET for web development.",
       type: "work" as const,
+    },
+    {
+      year: "2021 - 2025",
+      title: "UnderGraduate Studies",
+      company: "Dharmasth Desai University, Nadiad, India",
+      description: "Major in Information Technology with a CPI of 7.5/10.",
+      type: "education" as const,
     },
     {
       year: "2021",
@@ -82,7 +82,7 @@ const Experience = () => {
             <span className="gradient-text">Education & Experience</span>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg">
-            My journey through education and professional growth
+            Academic background and professional experience.
           </p>
         </motion.div>
 
@@ -135,8 +135,16 @@ const Experience = () => {
                       </h4>
                       <p className="text-xs md:text-sm text-primary mb-2">{exp.company}</p>
                       <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
-                        {exp.description}
+                        {(exp.title === "Graduate Studies"  || exp.title === "Software Developer Intern")
+                          ? exp.description.split(". ").map((line, i) => (
+                            <span key={i}>
+                              {line}
+                              <br />
+                            </span>
+                          ))
+                          : exp.description}
                       </p>
+
                     </div>
                   </div>
                 </motion.div>

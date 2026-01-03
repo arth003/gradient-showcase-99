@@ -87,8 +87,8 @@ const Certifications = () => {
             Certifications
           </h2>
           <div className="h-1 w-24 gradient-bg mx-auto rounded-full" />
-          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto">
-            Continuous learning and professional development through industry-recognized certifications
+          <p className="text-muted-foreground mt-6 text-lg mx-auto">
+            Continuous learning and professional development through industry-recognized certifications.
           </p>
         </motion.div>
 

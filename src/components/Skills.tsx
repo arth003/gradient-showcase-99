@@ -18,31 +18,13 @@ const Skills = () => {
     {
       icon: Database,
       title: "Backend Development",
-      description: "C/C+, C#, Node.js, Python, PostgreSQL, MongoDB, Microsoft SQL Server, APIs",
+      description: "C/C++, C#, Python, .Net Core, Nodejs, PostgreSQL, MongoDB, Microsoft SQL Server, APIs",
       color: "from-secondary to-accent",
     },
-    // {
-    //   icon: Palette,
-    //   title: "UI/UX Design",
-    //   description: "Figma, Adobe XD, Responsive Design, Animations",
-    //   color: "from-accent to-primary",
-    // },
-    // {
-    //   icon: Smartphone,
-    //   title: "Mobile Development",
-    //   description: "React Native, Flutter, Progressive Web Apps",
-    //   color: "from-primary-glow to-secondary",
-    // },
-    // {
-    //   icon: Zap,
-    //   title: "Performance",
-    //   description: "Optimization, SEO, Web Vitals, Speed",
-    //   color: "from-secondary to-primary",
-    // },
     {
       icon: Globe,
       title: " Tools and Deployment",
-      description: "Vercel, Docker, CI/CD Pipelines, Postman",
+      description: "Git, Github, Vercel, Docker, CI/CD Pipelines, Postman",
       color: "from-accent to-secondary",
     },
   ];
@@ -73,11 +55,11 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text font-space">
-            Skills & Expertise
+            Technical Skills
           </h2>
           <div className="h-1 w-24 gradient-bg mx-auto rounded-full" />
           <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern web applications
+            Technologies and tools I’ve used to build real-world applications.
           </p>
         </motion.div>
 

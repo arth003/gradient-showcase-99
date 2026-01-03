@@ -67,11 +67,14 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text font-space">
-            Featured Projects
+             Projects
           </h2>
           <div className="h-1 w-24 gradient-bg mx-auto rounded-full" />
-          <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-            A selection of my recent work showcasing different technologies and design approaches
+          {/* <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
+            My recent work showcasing different technologies and design approaches
+          </p> */}
+          <p className="text-lg text-muted-foreground mt-4  mx-auto">
+           Recent projects built using diverse technologies across frontend, backend, and machine learning.
           </p>
         </motion.div>
 

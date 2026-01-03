@@ -22,9 +22,9 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Skills", path: "/skills" },
-    { name: "Experience", path: "/experience" },
-    { name: "Certifications", path: "/certifications" },
     { name: "Projects", path: "/projects" },
+    { name: "Certifications", path: "/certifications" },
+    { name: "Experience", path: "/experience" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -46,9 +46,9 @@ const Navigation = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-2xl font-bold gradient-text font-space"
+            className="text-2xl  gradient-text font-space"
           >
-            Portfolio
+            Arth Nangar
           </motion.div>
 
           {/* Desktop Navigation */}
